@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'two-way-binding-html-component';
+  fullName: string = "ankur israni";
+
+  constructor() {
+    setTimeout(() => {
+      this.fullName = "software developer";
+    }, 5000);
+  }
 }
